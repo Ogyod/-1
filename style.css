@@ -19,6 +19,19 @@ header h1 {
   font-size: 2.5rem;
 }
 
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+}
+
 section {
   max-width: 900px;
   margin: 2rem auto;
@@ -105,4 +118,107 @@ footer {
   background: #f5f5f5;
   color: #666;
   font-size: 0.9rem;
+}
+
+/* Стили для секции "О нас" */
+.about-us {
+  text-align: center;
+}
+
+/* Стили для секции "Меню" */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Адаптивная сетка */
+  gap: 20px;
+}
+
+.menu-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.menu-item img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.menu-item h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.price {
+  font-weight: bold;
+  color: #5d4037;
+}
+
+/* Стили для секции "Обратная связь" */
+.contact {
+  text-align: center;
+}
+
+.contact a {
+  color: #5d4037;
+  text-decoration: none;
+}
+
+/* Стили для формы обратной связи */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical; /*  Разрешить изменение высоты */
+}
+
+.contact-form button {
+  padding: 10px 15px;
+  background-color: #5d4037;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.contact-form button:hover {
+  background-color: #4e342e;
+}
+
+/* Стили для иконок соцсетей в подвале */
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+footer .social-icons img {
+  width: 30px; /*  Размер иконок */
+  height: 30px;
+  border-radius: 50%; /* Делает иконки круглыми */
 }
